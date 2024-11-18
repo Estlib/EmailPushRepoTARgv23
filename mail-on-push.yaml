@@ -11,7 +11,7 @@ jobs:
           server_port: 587
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: 'ALERT, WE HAVE DETECTED HOT SINGLE COMMITS IN YOUR AREA ${{github.repository}}'
+          subject: "ALERT, WE HAVE DETECTED HOT SINGLE COMMITS IN YOUR AREA ${{github.repository}}"
           body: |
             Hello team,
 
@@ -21,4 +21,4 @@ jobs:
 
             Changes:
           to: "jyri.vaitmaa@tthk.ee"
-          from: Github actions for
+          from: "Github actions for ${{github.repository}}"
